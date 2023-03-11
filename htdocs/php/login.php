@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === "GET") {
-    require 'login.view.php';
+    require './views/login.view.php';
 } else if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     if (isset($_POST["username"]) && isset($_POST["password"])) {
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
             exit();
         } else if ($password != "admin") {
 
-            require 'login.view.php';
+            require './views/login.view.php';
         }
     }
 }
