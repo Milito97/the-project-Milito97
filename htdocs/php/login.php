@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
         if ($username === "admin" && $password === "admin") {
 
             $_SESSION['logged_in'] = true;
-            header("Location: login.php");
+            header("Location: index.php");
             exit();
         } else if ($password != "admin") {
 
