@@ -16,9 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
             $_SESSION['logged_in'] = true;
             header("Location: index.php");
             exit();
-        } else if ($password != "admin") {
-
-            require './views/login.view.php';
         }
     }
 }
